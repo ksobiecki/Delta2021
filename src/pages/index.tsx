@@ -1,5 +1,18 @@
 import React from 'react';
 
-const IndexPage = () => <h1>Delta 2021</h1>;
+import VideoSection from '../components/LandingPage/VideoSection';
 
-export default IndexPage;
+const IndedxPage = () => {
+	return (
+		<>
+			<VideoSection />
+			<div>landing</div>
+			<div>place</div>
+			<div>crew</div>
+			<div>partners</div>
+			<div>contact</div>
+		</>
+	);
+};
+
+export default IndedxPage;
