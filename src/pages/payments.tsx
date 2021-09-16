@@ -1,11 +1,13 @@
 import React from 'react';
+
+import Layout from '../components/Shared/Layout';
 import Payments from '../components/Payments';
 
 const PaymentsPage = () => {
 	return (
-		<div className="layout">
+		<Layout>
 			<Payments />
-		</div>
+		</Layout>
 	);
 };
 

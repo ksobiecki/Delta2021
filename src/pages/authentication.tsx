@@ -1,11 +1,13 @@
 import React from 'react';
+
+import Layout from '../components/Shared/Layout';
 import Authentication from '../components/Authentication';
 
 const PaymentsPage = () => {
 	return (
-		<div className="layout">
+		<Layout>
 			<Authentication />
-		</div>
+		</Layout>
 	);
 };
 
