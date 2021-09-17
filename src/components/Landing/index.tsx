@@ -1,9 +1,12 @@
 import React from 'react';
 
+import LandingSection from './LandingSection';
+import AboutUsSection from './AboutUsSection';
+
 const Landing = () => (
 	<>
-		<div>landing</div>
-		<div>about</div>
+		<LandingSection />
+		<AboutUsSection />
 		<div>crew</div>
 		<div>gallery</div>
 		<div>partners</div>

@@ -1,14 +1,17 @@
 import React from 'react';
 
+import { LayoutRoot } from './styled';
 import { GlobalStyle } from '../../../theme/global-style';
 import Navbar from '../Navbar';
 
 const Layout: React.FC = ({ children }) => {
 	return (
 		<>
-			<Navbar />
 			<GlobalStyle />
-			{children}
+			<LayoutRoot>
+				<Navbar />
+				{children}
+			</LayoutRoot>
 		</>
 	);
 };

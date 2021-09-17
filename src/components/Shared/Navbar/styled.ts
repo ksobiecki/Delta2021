@@ -5,7 +5,7 @@ import logo from '../../../assets/images/logo.svg';
 
 export const Nav = styled('nav')`
 	width: 100%;
-	height: 100px;
+	height: 10vh;
 	padding: 0 5vw;
 	display: flex;
 	align-items: center;
@@ -13,6 +13,8 @@ export const Nav = styled('nav')`
 	position: fixed;
 	top: 0;
 	border-bottom: 1px solid purple;
+	z-index: 1000;
+	background-color: transparent;
 `;
 
 export const Logo = styled(Link)`
@@ -28,6 +30,6 @@ export const LinksContainer = styled('div')``;
 
 export const NavLink = styled(Link)`
 	font-size: 20px;
-	color: purple;
+	color: white;
 	margin-right: 20px;
 `;
