@@ -12,9 +12,9 @@ export const Nav = styled('nav')`
 	justify-content: space-between;
 	position: fixed;
 	top: 0;
-	border-bottom: 1px solid purple;
+	border-bottom: 1px solid ${(props) => props.theme.colors.darkPurple};
 	z-index: 1000;
-	background-color: transparent;
+	background-color: ${(props) => props.theme.colors.darkPurple};
 `;
 
 export const Logo = styled(Link)`
@@ -30,6 +30,15 @@ export const LinksContainer = styled('div')``;
 
 export const NavLink = styled(Link)`
 	font-size: 20px;
-	color: white;
+	font-weight: bold;
+	color: ${(props) => props.theme.colors.white};
 	margin-right: 20px;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	&:hover {
+		color: ${(props) => props.theme.colors.lightPurple};
+	}
 `;

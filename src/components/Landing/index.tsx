@@ -2,15 +2,19 @@ import React from 'react';
 
 import LandingSection from './LandingSection';
 import AboutUsSection from './AboutUsSection';
+import CrewSection from './CrewSection';
+import GallerySection from './GallerySection';
+import PartnersSection from './PartnersSection';
+import FooterSection from './FooterSection';
 
 const Landing = () => (
 	<>
 		<LandingSection />
 		<AboutUsSection />
-		<div>crew</div>
-		<div>gallery</div>
-		<div>partners</div>
-		<div>signin</div>
+		<CrewSection />
+		<GallerySection />
+		<PartnersSection />
+		<FooterSection />
 	</>
 );
 

@@ -7,8 +7,9 @@ const Navbar = () => {
 		<Nav>
 			<Logo to="/" />
 			<LinksContainer>
-				<NavLink to="/authentication">Authentication</NavLink>
-				<NavLink to="/payments">Payments</NavLink>
+				<NavLink to="/rejestracja">Rejestracja</NavLink>
+				<NavLink to="/platnosci">Płatności</NavLink>
+				<NavLink to="/faq">FAQ</NavLink>
 			</LinksContainer>
 		</Nav>
 	);

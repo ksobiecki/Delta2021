@@ -8,10 +8,10 @@ const Layout: React.FC = ({ children }) => {
 	return (
 		<>
 			<GlobalStyle />
-			<LayoutRoot>
-				<Navbar />
-				{children}
-			</LayoutRoot>
+			{/* <LayoutRoot> */}
+			<Navbar />
+			{children}
+			{/* </LayoutRoot> */}
 		</>
 	);
 };

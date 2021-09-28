@@ -1,7 +1,11 @@
 export const colors = {
-	white: '#ffffff',
-	purple: '#25105B',
-	darkPurple: '#15063F',
+	white: '#f0f0f0',
+	black: '#0f0f0f',
+	orange: 'e06d06',
+	lightPurple: '#7168ad',
+	purple: '#3c4167',
+	darkPurple: '#141118',
+	darkerPurple: '#030007',
 };
 
 const theme = {
