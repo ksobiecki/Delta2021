@@ -24,3 +24,16 @@ export const Background = styled.div`
 		#3c4167 100%
 	);
 `;
+
+export const Container = styled.div`
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3vw;
+	position: relative;
+	height: 100%;
+`;
+
+
+
+

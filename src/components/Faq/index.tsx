@@ -3,11 +3,11 @@ import React from 'react';
 import FaqLandingSection from './FaqLandingSection';
 import FaqMainSection from './FaqMainSection';
 
-const Register = () => (
+const Faq = () => (
 	<>
 		<FaqLandingSection />
 		<FaqMainSection />
 	</>
 );
 
-export default Register;
+export default Faq;

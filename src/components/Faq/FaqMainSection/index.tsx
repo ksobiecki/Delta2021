@@ -1,11 +1,20 @@
 import React from 'react';
+import FaqList from './FaqList/index';
 
-import { FaqMainSectionLayout, Background } from './styled';
+import {
+	FaqMainSectionLayout,
+	Background,
+	Container,
+} from './styled';
 
 const FaqMainSection = () => {
 	return (
 		<FaqMainSectionLayout>
-			<Background />
+			<Background>
+				<Container>
+					<FaqList/>
+				</Container>
+			</Background>
 		</FaqMainSectionLayout>
 	);
 };
