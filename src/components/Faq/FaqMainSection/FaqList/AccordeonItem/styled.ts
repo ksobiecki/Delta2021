@@ -8,9 +8,14 @@ export const Arrow = styled(BiRightArrow)`
 	transition: all 0.3s;
 	user-select: none;
 	transform: ${(props) => props.transform};
+	@media only screen and (max-width: 600px) {
+		margin-right: auto;
+		padding-left: 5px;
+	}
 `;
 
 export const Accordeon = styled.div`
+	cursor: pointer;
 	width: 100%;
 	padding: 2em;
 	transition: all 0.3s;
@@ -24,11 +29,18 @@ export const Accordeon = styled.div`
 	&:hover {
 		background-color: #363636;
 	}
+	@media only screen and (max-width: 600px) {
+		width: 100%;
+		padding: 1em;
+	}
 `;
 
 export const AccordeonHeader = styled.div`
 	display: flex;
 	align-items: center;
+	@media only screen and (max-width: 600px) {
+		font-size: 13px;
+	}
 `;
 
 export const AccordeonContent = styled.div`
@@ -36,6 +48,26 @@ export const AccordeonContent = styled.div`
 	font-family: Roboto, sans-serif;
 	font-weight: 200;
 	display: flex;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	text-align: justify;
+	@media only screen and (max-width: 600px) {
+		font-size: 12px;
+	}
+`;
+
+export const Numerical = styled.h3`
+	font-size: 2.8em;
+	font-weight: 900;
+	margin: 0;
+	@media only screen and (max-width: 600px) {
+		font-size: 2.4em;
+	}
+`;
+
+export const Question = styled.p`
+	margin: 0;
+	font-size: 1.5em;
+	font-family: Roboto, sans-serif;
+	font-weight: 200;
+	padding: 0 0 0 1.5em;
 `;

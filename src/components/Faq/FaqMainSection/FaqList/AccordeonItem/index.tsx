@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import { Accordeon, AccordeonHeader, AccordeonContent, Arrow } from './styled';
+import {
+	Accordeon,
+	AccordeonHeader,
+	AccordeonContent,
+	Arrow,
+	Question,
+	Numerical,
+} from './styled';
 interface AccordeonProps {
 	num: number;
 	question: string;
@@ -8,7 +15,8 @@ interface AccordeonProps {
 
 const AccordeonItem: React.FC<AccordeonProps> = ({ num, question, answer }) => {
 	const [isHovered, setIsHovered] = useState(false);
-   const [isDropedDown, setIsDropDown] = useState(false);
+	const [isDropedDown, setIsDropDown] = useState(false);
+	const answerArray: Array<String> = answer.split('/n');
 	return (
 		<Accordeon
 			background-color={isHovered ? 'black' : 'red'}
@@ -23,8 +31,8 @@ const AccordeonItem: React.FC<AccordeonProps> = ({ num, question, answer }) => {
 			}}
 		>
 			<AccordeonHeader>
-				<h3>{num}</h3>
-				<p>{question}</p>
+				<Numerical>{num}</Numerical>
+				<Question>{question}</Question>
 				<Arrow
 					color={isHovered ? 'violet' : 'white'}
 					transform={isDropedDown ? 'rotate(90deg)' : ''}
@@ -32,7 +40,14 @@ const AccordeonItem: React.FC<AccordeonProps> = ({ num, question, answer }) => {
 			</AccordeonHeader>
 			{isDropedDown ? (
 				<AccordeonContent>
-					<p>{answer}</p>
+					<p>
+						{answerArray.map((answer) => (
+							<>
+								{answer}
+								<br />
+							</>
+						))}
+					</p>
 				</AccordeonContent>
 			) : null}
 		</Accordeon>
