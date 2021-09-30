@@ -31,7 +31,7 @@ const AccordeonItem: React.FC<AccordeonProps> = ({ num, question, answer }) => {
 			}}
 		>
 			<AccordeonHeader>
-				<Numerical>{num}</Numerical>
+				<Numerical color={isHovered ? '#BCBCBC' : 'white'}>{num}</Numerical>
 				<Question>{question}</Question>
 				<Arrow
 					color={isHovered ? 'violet' : 'white'}

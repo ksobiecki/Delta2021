@@ -21,13 +21,13 @@ export const Accordeon = styled.div`
 	transition: all 0.3s;
 	color: #fff;
 	&:nth-child(2n + 1) {
-		background-color: #181818;
+		background-color: #2f2f2f;
 	}
 	&:nth-child(2n) {
-		background-color: #202020;
+		background-color: #242424;
 	}
 	&:hover {
-		background-color: #363636;
+		background-color: #3a3a3a;
 	}
 	@media only screen and (max-width: 600px) {
 		width: 100%;
@@ -59,6 +59,7 @@ export const Numerical = styled.h3`
 	font-size: 2.8em;
 	font-weight: 900;
 	margin: 0;
+	color: ${(props) => props.color};
 	@media only screen and (max-width: 600px) {
 		font-size: 2.4em;
 	}
