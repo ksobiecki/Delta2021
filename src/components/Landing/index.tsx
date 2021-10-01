@@ -10,11 +10,11 @@ import FooterSection from './FooterSection';
 const Landing = () => (
 	<>
 		<LandingSection />
-		<AboutUsSection />
+		{/* <AboutUsSection />
 		<CrewSection />
 		<GallerySection />
 		<PartnersSection />
-		<FooterSection />
+		<FooterSection /> */}
 	</>
 );
 

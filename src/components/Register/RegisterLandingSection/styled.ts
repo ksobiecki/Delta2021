@@ -20,12 +20,20 @@ export const Background = styled.div`
 	position: absolute;
 	left: 0;
 	right: 0;
+
+	@media screen and (max-width: 1275px) {
+		background-position-y: 0px;
+	}
 `;
 
 export const Header = styled.h1`
-	font-size: 100px;
+	font-size: clamp(2rem, 6vw, 8rem);
 	color: ${(props) => props.theme.colors.white};
 	font-family: SourceSansProBold;
 	z-index: 5;
 	margin: 23% auto 0;
+
+	@media screen and (max-width: 1275px) {
+		margin: 35% auto 0;
+	}
 `;
