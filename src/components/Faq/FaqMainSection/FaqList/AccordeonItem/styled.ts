@@ -51,6 +51,8 @@ export const AccordeonContent = styled.div`
 	display: flex;
 	font-size: 1.2em;
 	text-align: justify;
+	align-items: flex-start;
+	flex-direction: column;
 	@media only screen and (max-width: 600px) {
 		font-size: 12px;
 	}

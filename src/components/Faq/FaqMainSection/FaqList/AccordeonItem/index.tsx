@@ -40,14 +40,9 @@ const AccordeonItem: React.FC<AccordeonProps> = ({ num, question, answer }) => {
 			</AccordeonHeader>
 			{isDropedDown ? (
 				<AccordeonContent>
-					<p>
-						{answerArray.map((answer) => (
-							<>
-								{answer}
-								<br />
-							</>
-						))}
-					</p>
+					{answerArray.map((answer, index) => (
+						<p key={index}>{answer}</p>
+					))}
 				</AccordeonContent>
 			) : null}
 		</Accordeon>
