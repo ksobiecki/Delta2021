@@ -24,6 +24,11 @@ export const Logo = styled(Link)`
 	background-size: 125%;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	@media only screen and (max-width: 600px) {
+		width: 60px;
+		height: 60px;
+	}
 `;
 
 export const LinksContainer = styled('div')``;
@@ -40,5 +45,9 @@ export const NavLink = styled(Link)`
 
 	&:hover {
 		color: ${(props) => props.theme.colors.lightPurple};
+	}
+
+	@media only screen and (max-width: 600px) {
+		font-size: 14px;
 	}
 `;

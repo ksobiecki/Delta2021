@@ -2,18 +2,24 @@ import styled from 'styled-components';
 
 import { StyledSection } from '../../Shared/SectionLayout/styled';
 
-export const FaqMainSectionLayout = styled(StyledSection)`
-	display: flex;
+export const PaymentsFormSectionLayout = styled(StyledSection)`
 	margin: 0;
 	padding: 0;
 	max-width: unset;
 	overflow: hidden;
-	height: auto;
+	align-items: baseline;
+	justify-content: center;
+	height: 100%;
+	min-height: 30vh;
+
+	@media only screen and (max-width: 1300px) {
+		min-height: 40vh;
+	}
 `;
 
 export const Background = styled.div`
-	z-index: 10;
-	position: relative;
+	z-index: -1;
+	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100vw;
@@ -27,15 +33,8 @@ export const Background = styled.div`
 	);
 `;
 
-export const Container = styled.div`
-	max-width: 1280px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 3vw;
-	position: relative;
-	height: 100%;
-	@media only screen and (max-width: 800px) {
-		width: 80%;
-		margin-top: 2vw;
-	}
+export const Text = styled.h4`
+	padding-top: 20px;
+	color: ${(props) => props.theme.colors.white};
+	font-size: 20px;
 `;

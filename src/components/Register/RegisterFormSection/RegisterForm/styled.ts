@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { StyledSection } from './../../../Shared/SectionLayout/styled';
+
 export const Form = styled.form`
 	white-space: pre-wrap;
 	font-size: clamp(1rem, 2vw, 1.8rem);
@@ -20,19 +22,15 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
-	font-size: clamp(0.3rem, 0.7vw, 1.1rem);
+	font-size: clamp(0.9rem, 0.7vw, 1.1rem);
 	color: ${(props) => props.theme.colors.white};
 	opacity: 0.5;
 	margin: 0.9vh auto 0 0;
-
-	@media (max-width: 768px) {
-		font-size: 1.3em;
-	}
 `;
 
 export const Input = styled.input`
 	width: 100%;
-	font-size: clamp(1em, 1.2vw, 1.3em);
+	font-size: clamp(1rem, 1.2vw, 1.3rem);
 	padding: 0.3em 0.2em;
 	margin: 0.2em 0;
 	border: 2px solid ${(props) => props.theme.colors.lightPurple};
@@ -43,18 +41,13 @@ export const Input = styled.input`
 
 	@media (max-width: 768px) {
 		height: 5vh;
-		font-size: 1.5em;
 	}
 
 	&::placeholder {
 		position: absolute;
 		top: 5px;
 		left: 5px;
-		font-size: 0.6em;
-
-		@media (max-width: 768px) {
-			font-size: 1.3em !important;
-		}
+		font-size: clamp(1rem, 1.2vw, 1.3rem);
 	}
 `;
 
@@ -62,22 +55,18 @@ export const Agreement = styled.div`
 	margin: 1vh 0 0 0;
 	display: flex;
 	align-items: center;
-	font-size: clamp(0.5rem, 1vw, 1rem);
+	font-size: clamp(0.7rem, 1vw, 1rem);
 	width: 100%;
 	color: ${(props) => props.theme.colors.white};
 
 	& > span {
 		width: 100%;
 	}
-
-	@media screen and (max-width: 768px) {
-		font-size: 1rem;
-	}
 `;
 
 export const Select = styled.select`
 	width: 100%;
-	font-size: clamp(1em, 1.2vw, 1.3em);
+	font-size: clamp(1rem, 1.2vw, 1.3rem);
 	padding: 0.4em 0.2em;
 	margin: 0.2em 0;
 	border: 2px solid ${(props) => props.theme.colors.lightPurple};
@@ -88,7 +77,6 @@ export const Select = styled.select`
 
 	@media (max-width: 768px) {
 		height: 5vh;
-		font-size: 1.5em;
 	}
 `;
 
@@ -98,23 +86,26 @@ export const Option = styled.option`
 `;
 
 export const Button = styled.button`
-	margin: 2vh 0 0 0;
-	width: 10vw;
-	padding: 0.5em 0.2em;
-	background-color: ${(props) => props.theme.colors.white};
+	margin: 3vh 0 0;
+	width: fit-content;
+	padding: 10px 25px;
+	background-color: #36208a;
 	border-radius: 8px;
-	border: 2px solid ${(props) => props.theme.colors.darkPurple};
+	border: 1px solid ${(props) => props.theme.colors.white};
 	transition: all 0.3s;
+	font-size: clamp(1em, 1.2vw, 1.3em);
+	color: ${(props) => props.theme.colors.white};
+	font-family: OpenSans;
+	font-weight: bold;
 
 	@media only screen and (max-width: 768px) {
 		width: 50vw;
-		height: 5vh;
 		margin: 2vh 0;
 	}
 
 	&:hover {
 		cursor: pointer;
-		background-color: ${(props) => props.theme.colors.lightPurple};
+		background-color: #6449d4;
 	}
 `;
 
@@ -129,8 +120,9 @@ export const Checkmark = styled.span`
 	background-color: ${(props) => props.theme.colors.white};
 
 	@media (max-width: 768px) {
-		width: 15px;
-		height: 15px;
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
 	}
 
 	&::after {
@@ -185,9 +177,53 @@ export const Container = styled.label`
 		transform: rotate(45deg);
 
 		@media (max-width: 768px) {
-			left: 8px;
+			left: 7px;
 			top: 0px;
-			width: 3px;
+			width: 7px;
 		}
 	}
+`;
+
+export const StyledLink = styled.a`
+	color: white;
+	text-decoration: underline;
+`;
+
+export const Required = styled.span`
+	text-transform: italic;
+	color: red;
+`;
+
+export const StyledMessage = styled(StyledSection)`
+	margin: 0;
+	padding: 20px 0 0;
+	max-width: unset;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	height: 100%;
+	min-height: 30vh;
+	color: ${(props) => props.theme.colors.white};
+
+	@media only screen and (max-width: 1300px) {
+		min-height: 40vh;
+	}
+`;
+
+export const Background = styled.div`
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100%;
+	background: linear-gradient(
+		180deg,
+		#151319 0%,
+		#151319 10%,
+		#3c4167 90%,
+		#3c4167 100%
+	);
 `;

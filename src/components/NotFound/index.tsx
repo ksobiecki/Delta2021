@@ -1,8 +1,10 @@
 import React from 'react';
 
+import SubpageLandingSection from '../Shared/SubpageLandingSection';
+
 const NotFound = () => (
 	<>
-		<div>404</div>
+		<SubpageLandingSection header="Not Found" />
 	</>
 );
 

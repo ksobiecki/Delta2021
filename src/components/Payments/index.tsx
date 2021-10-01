@@ -1,8 +1,12 @@
 import React from 'react';
 
+import SubpageLandingSection from '../Shared/SubpageLandingSection';
+import PaymentsFormSection from './PaymentsFormSection';
+
 const Payments = () => (
 	<>
-		<div>payments</div>
+		<SubpageLandingSection header="Płatności" />
+		<PaymentsFormSection />
 	</>
 );
 
