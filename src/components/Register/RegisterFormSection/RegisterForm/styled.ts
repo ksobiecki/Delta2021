@@ -4,7 +4,7 @@ export const Form = styled.form`
 	white-space: pre-wrap;
 	font-size: clamp(1rem, 2vw, 1.8rem);
 	font-family: OpenSans;
-	padding: 4vh 2.5vw 0;
+	padding: 4vh 2.5vw 2vh;
 	text-align: justify;
 	display: flex;
 	justify-content: center;

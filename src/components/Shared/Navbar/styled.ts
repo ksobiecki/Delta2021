@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import logo from '../../../assets/images/logo.svg';
+import logo from '../../../assets/images/logoWhite.svg';
 
 export const Nav = styled('nav')`
 	width: 100%;
