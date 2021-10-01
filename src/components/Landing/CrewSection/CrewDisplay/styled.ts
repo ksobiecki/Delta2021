@@ -19,18 +19,18 @@ export const Image = styled.img<{ src: string }>`
 export const Name = styled.h3`
 	font-size: 30px;
 	font-family: SourceSansProBold;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 `;
 
 export const Role = styled.p`
 	font-size: 18px;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 	margin-bottom: 20px;
 `;
 
 export const Description = styled.p`
 	font-size: 18px;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 	max-height: 250px;
 	overflow-y: scroll;
 	padding: 10px;

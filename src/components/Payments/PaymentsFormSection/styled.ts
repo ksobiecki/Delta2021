@@ -35,6 +35,6 @@ export const Background = styled.div`
 
 export const Text = styled.h4`
 	padding-top: 20px;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 	font-size: 20px;
 `;

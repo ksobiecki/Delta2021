@@ -41,7 +41,7 @@ export const Background = styled.div`
 
 export const Header = styled.h1`
 	font-size: 100px;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 	font-family: SourceSansProBold;
 	z-index: 5;
 	margin: 23% auto 0;
@@ -51,10 +51,10 @@ export const Header = styled.h1`
 	}
 
 	@media only screen and (max-width: 768px) {
-		margin: 50% auto 0;
+		margin: 20vh auto 0;
 	}
 
 	@media only screen and (max-width: 400px) {
-		margin: 75% auto 0;
+		margin: 35vh auto 0;
 	}
 `;

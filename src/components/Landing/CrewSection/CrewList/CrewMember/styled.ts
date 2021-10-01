@@ -7,12 +7,11 @@ export const ListItem = styled.div<{ img: string; isActive: boolean }>`
 	background-size: cover;
 	background-repeat: no-repeat;
 	opacity: ${(props) => (props.isActive ? 1 : 0.5)};
-	border: ${(props) =>
-		props.isActive ? props.theme.colors.lightPurple : 'none'};
+	border: ${(props) => (props.isActive ? '#7168ad' : 'none')};
 
 	&:hover {
 		opacity: 1;
-		border: 2px solid ${(props) => props.theme.colors.lightPurple};
+		border: 2px solid #7168ad;
 		cursor: pointer;
 	}
 `;

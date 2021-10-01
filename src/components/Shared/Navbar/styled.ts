@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import logo from '../../../assets/images/logoWhite.svg';
 
-export const Nav = styled('nav')`
+export const Nav = styled.nav`
 	width: 100%;
 	height: 10vh;
 	padding: 0 5vw;
@@ -12,9 +12,9 @@ export const Nav = styled('nav')`
 	justify-content: space-between;
 	position: fixed;
 	top: 0;
-	border-bottom: 1px solid ${(props) => props.theme.colors.darkPurple};
+	border-bottom: 1px solid #141118;
 	z-index: 1000;
-	background-color: ${(props) => props.theme.colors.darkPurple};
+	background-color: #141118;
 `;
 
 export const Logo = styled(Link)`
@@ -36,7 +36,7 @@ export const LinksContainer = styled('div')``;
 export const NavLink = styled(Link)`
 	font-size: 20px;
 	font-weight: bold;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 	margin-right: 20px;
 
 	&:last-of-type {
@@ -44,7 +44,7 @@ export const NavLink = styled(Link)`
 	}
 
 	&:hover {
-		color: ${(props) => props.theme.colors.lightPurple};
+		color: #7168ad;
 	}
 
 	@media only screen and (max-width: 600px) {

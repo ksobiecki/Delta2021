@@ -134,15 +134,21 @@ const RegisterForm = () => {
 					<Label>
 						Rok studiów (na którym roku będziesz po rozpoczęciu semestru)*
 					</Label>
-					<Input
+					<Select
 						onChange={(e) => handleYearInput(e.target.value)}
-						value={year}
 						required
-						placeholder="Rok studiów"
-						type="number"
-						min="1"
-						max="5"
-					/>
+						placeholder="Wybierz rok studiów"
+						defaultValue=""
+					>
+						<Option value="" disabled>
+							Wybierz rok studiów
+						</Option>
+						<Option value="1">I</Option>
+						<Option value="2">II</Option>
+						<Option value="3">III</Option>
+						<Option value="4">IV</Option>
+						<Option value="5">V</Option>
+					</Select>
 					<Label>Wydział</Label>
 					<Select
 						onChange={(e) => setFaculty(String(e.target.value))}
@@ -188,7 +194,7 @@ const RegisterForm = () => {
 					<Agreement>
 						<span>
 							Akceptuję regulamin wyjazdu wyjazdu integracyjno-szkoleniowego
-							"Adapciak 2021" dostępny pod{' '}
+							"Delta 2021" dostępny pod{' '}
 							<StyledLink target="_blank" rel="noreferrer" href={regulamin}>
 								tym adresem
 							</StyledLink>{' '}
@@ -206,11 +212,11 @@ const RegisterForm = () => {
 							Wyrażam zgodę na przetwarzanie moich danych osobowych przez
 							Politechnikę Łódzką, adres siedziby: ul. Żeromskiego 116, 90-924
 							Łódź, jako administratora, w celu zorganizowania i przeprowadzenia
-							wyjazdu integracyjno-szkoleniowego "Adapciak 2021" (dalej:
-							Wyjazdu). podany w formularzu. Także zgadzam się na otrzymywanie
-							wiadomości tekstowych dotyczących spraw organizacyjnych związanych
-							z Wyjazdem na adres e-mail i numer telefonu podany w formularzu.
-							Klauzula RODO dostępna jest{' '}
+							wyjazdu integracyjno-szkoleniowego "Delta 2021" (dalej: Wyjazdu).
+							podany w formularzu. Także zgadzam się na otrzymywanie wiadomości
+							tekstowych dotyczących spraw organizacyjnych związanych z Wyjazdem
+							na adres e-mail i numer telefonu podany w formularzu. Klauzula
+							RODO dostępna jest{' '}
 							<StyledLink target="_blank" rel="noreferrer" href={rodo}>
 								tutaj
 							</StyledLink>
