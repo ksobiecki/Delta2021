@@ -6,7 +6,7 @@ const FaqLandingSection = () => {
 	return (
 		<FaqSectionLayout>
 			<Background />
-			<Header>Faq</Header>
+			<Header>FAQ</Header>
 		</FaqSectionLayout>
 	);
 };

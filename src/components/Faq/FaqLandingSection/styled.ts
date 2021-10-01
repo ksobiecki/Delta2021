@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { StyledSection } from '../../Shared/SectionLayout/styled';
 
-import backgound from '../../../assets/images/headerBackground.png';
+import background from '../../../assets/images/headerBackground.png';
 
 export const FaqSectionLayout = styled(StyledSection)`
 	margin-top: 10vh;
@@ -14,7 +14,7 @@ export const FaqSectionLayout = styled(StyledSection)`
 export const Background = styled.div`
 	height: 60vh;
 	background-position-y: -100px;
-	background-image: url(${backgound});
+	background-image: url(${background});
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
