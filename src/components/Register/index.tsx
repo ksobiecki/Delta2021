@@ -1,11 +1,11 @@
 import React from 'react';
 import RegisterFormSection from './RegisterFormSection';
 
-import RegisterLandingSection from './RegisterLandingSection/index';
+import SubpageLandingSection from '../Shared/SubpageLandingSection';
 
 const Register = () => (
 	<>
-		<RegisterLandingSection />
+		<SubpageLandingSection header="Rejestracja" />
 		<RegisterFormSection />
 	</>
 );

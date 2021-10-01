@@ -44,6 +44,7 @@ Uczestników informujemy, że na odprawie obozowej mogą pojawić się władze W
 				answer="Jeśli osoba wchodząca w skład Kadry lub Koordynator Główny Delty podejrzewać będą zażywanie przez uczestnika Wyjazdu substancji zabronionych, poinformują o tym odpowiednie służby interwencyjne. W razie potwierdzenia podejrzeń, Uczestnik taki zostaje wydalony dyscyplinarnie z Wyjazdu a Koordynator o całym zajściu poinformuje Władze Uczelni.
 
 Uczestnik, który dopuści się łamania któregokolwiek z punktów Regulaminu, otrzymuje każdorazowo ostrzeżenie od Koordynatora Głównego Delty. Ostrzeżenie może być dane na uzasadnioną prośbę osób wskazanych jako Kadra, przedstawicieli Uczelni lub innych uczestników Delty. Otrzymanie 2-go ostrzeżenia, przez jedną osobę skutkuje również wydaleniem Uczestnika z Wyjazdu bez możliwości roszczeń przez niego praw do zwrotu wpłaty za Wyjazd. Wydalenie Uczestnika z Wyjazdu wiąże się z samodzielnym powrotem Uczestnika do domu (uczestnicy są pełnoletni, a organizator nie sprawuje pieczy nad osobą Uczestnika) oraz powiadomieniem Władz Uczelni o zaistniałej sytuacji."
+				key="a5"
 			/>
 		</AccordeonList>
 	);

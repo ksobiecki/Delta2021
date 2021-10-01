@@ -8,8 +8,9 @@ export const Arrow = styled(BiRightArrow)`
 	transition: all 0.3s;
 	user-select: none;
 	transform: ${(props) => props.transform};
+
 	@media only screen and (max-width: 600px) {
-		margin-right: auto;
+		margin-right: 5px;
 		padding-left: 5px;
 	}
 `;
