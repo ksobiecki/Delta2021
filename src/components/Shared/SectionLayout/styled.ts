@@ -24,7 +24,7 @@ export const Icon = styled(IoIosArrowDown)`
 	position: absolute;
 	left: 50%;
 	bottom: 20px;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 	font-size: 40px;
 `;
 
@@ -38,7 +38,7 @@ export const Arrow = styled.svg`
 	z-index: 999;
 
 	path {
-		stroke: ${(props) => props.theme.colors.white};
+		stroke: #f0f0f0;
 		stroke-width: 2px;
 		fill: transparent;
 		animation: ${down} 2s infinite;

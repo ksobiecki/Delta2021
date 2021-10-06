@@ -44,17 +44,17 @@ export const StyledLinkButton = styled(Link)`
 	width: fit-content;
 	padding: 30px;
 	height: 30px;
-	background-color: ${(props) => props.theme.colors.lightPurple};
+	background-color: #7168ad;
 	border-radius: 10px;
 	outline: none;
-	border: 2px solid ${(props) => props.theme.colors.darkPurple};
+	border: 2px solid #141118;
 	display: flex;
 	align-items: center;
 	font-size: 30px;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 
 	&:hover {
-		background-color: ${(props) => props.theme.colors.purple};
+		background-color: #3c4167;
 		cursor: pointer;
 	}
 

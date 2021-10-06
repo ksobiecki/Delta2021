@@ -28,7 +28,7 @@ export const ItemsList = styled.div`
 export const Separator = styled.div`
 	width: 50vw;
 	height: 1px;
-	border-bottom: 4px solid ${(props) => props.theme.colors.lightPurple};
+	border-bottom: 4px solid #7168ad;
 	position: absolute;
 	bottom: 10%;
 `;

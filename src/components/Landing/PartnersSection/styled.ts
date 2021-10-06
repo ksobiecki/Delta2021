@@ -35,7 +35,7 @@ export const Right = styled.div`
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	background-color: ${(props) => props.theme.colors.white};
+	background-color: #f0f0f0;
 	border-radius: 10px;
 `;
 
@@ -59,7 +59,7 @@ export const Arrow = styled.svg`
 	z-index: 999;
 
 	path {
-		stroke: ${(props) => props.theme.colors.white};
+		stroke: #f0f0f0;
 		stroke-width: 2px;
 		fill: transparent;
 		animation: ${down} 2s infinite;

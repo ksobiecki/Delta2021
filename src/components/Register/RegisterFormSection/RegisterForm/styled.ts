@@ -23,7 +23,7 @@ export const Form = styled.form`
 
 export const Label = styled.label`
 	font-size: clamp(0.9rem, 0.7vw, 1.1rem);
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 	opacity: 0.5;
 	margin: 0.9vh auto 0 0;
 `;
@@ -33,7 +33,7 @@ export const Input = styled.input`
 	font-size: clamp(1rem, 1.2vw, 1.3rem);
 	padding: 0.3em 0.2em;
 	margin: 0.2em 0;
-	border: 2px solid ${(props) => props.theme.colors.lightPurple};
+	border: 2px solid #7168ad;
 	border-radius: 8px;
 	position: relative;
 	transition: all 0.1s;
@@ -57,7 +57,7 @@ export const Agreement = styled.div`
 	align-items: center;
 	font-size: clamp(0.7rem, 1vw, 1rem);
 	width: 100%;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 
 	& > span {
 		width: 100%;
@@ -69,7 +69,7 @@ export const Select = styled.select`
 	font-size: clamp(1rem, 1.2vw, 1.3rem);
 	padding: 0.4em 0.2em;
 	margin: 0.2em 0;
-	border: 2px solid ${(props) => props.theme.colors.lightPurple};
+	border: 2px solid #7168ad;
 	border-radius: 8px;
 	position: relative;
 	transition: all 0.1s;
@@ -91,10 +91,10 @@ export const Button = styled.button`
 	padding: 10px 25px;
 	background-color: #36208a;
 	border-radius: 8px;
-	border: 1px solid ${(props) => props.theme.colors.white};
+	border: 1px solid #f0f0f0;
 	transition: all 0.3s;
 	font-size: clamp(1em, 1.2vw, 1.3em);
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 	font-family: OpenSans;
 	font-weight: bold;
 
@@ -117,7 +117,7 @@ export const Checkmark = styled.span`
 	transform: translate(-50%, -50%);
 	height: 25px;
 	width: 25px;
-	background-color: ${(props) => props.theme.colors.white};
+	background-color: #f0f0f0;
 
 	@media (max-width: 768px) {
 		width: 20px;
@@ -158,7 +158,7 @@ export const Container = styled.label`
 	}
 
 	& input:checked ~ ${Checkmark} {
-		background-color: ${(props) => props.theme.colors.lightPurple};
+		background-color: #7168ad;
 	}
 
 	& input:checked ~ ${Checkmark}:after {
@@ -205,7 +205,7 @@ export const StyledMessage = styled(StyledSection)`
 	text-align: center;
 	height: 100%;
 	min-height: 30vh;
-	color: ${(props) => props.theme.colors.white};
+	color: #f0f0f0;
 
 	@media only screen and (max-width: 1300px) {
 		min-height: 40vh;
