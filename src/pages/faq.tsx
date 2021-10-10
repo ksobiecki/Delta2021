@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Layout from '../components/Shared/Layout';
-import Landing from '../components/Landing';
+import Faq from '../components/Faq';
 
-const IndexPage = () => {
+const FaqPage = () => {
 	return (
 		<Layout>
-			<Landing />
+			<Faq />
 		</Layout>
 	);
 };
 
-export default IndexPage;
+export default FaqPage;

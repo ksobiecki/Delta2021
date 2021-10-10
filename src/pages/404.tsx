@@ -1,5 +1,14 @@
 import React from 'react';
 
-const NotFoundPage = () => <h1>404: Not Found</h1>;
+import Layout from '../components/Shared/Layout';
+import NotFound from '../components/NotFound';
+
+const NotFoundPage = () => {
+	return (
+		<Layout>
+			<NotFound />
+		</Layout>
+	);
+};
 
 export default NotFoundPage;
