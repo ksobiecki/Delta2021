@@ -7,12 +7,11 @@ import { PaymentsFormSectionLayout, Background } from './styled';
 
 const PaymentsFormSection = () => {
 	const [isFilled, setIsFilled] = useState(false);
-
 	return (
 		<PaymentsFormSectionLayout>
 			<Background />
-			<PaymentsAccountInfo isShown={!isFilled} />
-			<PaymentsForm fillForm={() => setIsFilled(true)} />
+			<PaymentsAccountInfo isShown={false} />
+			{/* <PaymentsForm fillForm={() => setIsFilled(true)} /> */}
 		</PaymentsFormSectionLayout>
 	);
 };

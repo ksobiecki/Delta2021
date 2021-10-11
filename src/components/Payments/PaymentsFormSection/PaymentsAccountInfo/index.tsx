@@ -67,7 +67,7 @@ const PaymentsAccountInfo: React.FC<PaymentsAccountInfoProps> = ({
 					</StyledParagraph>
 				</TextContainer>
 			)}
-			{!isOpen && <StyledText>Wpłaty ruszą wkrótce</StyledText>}
+			{!isShown && <StyledText>Osiągnięto limit wpłat :)</StyledText>}
 		</>
 	);
 };
