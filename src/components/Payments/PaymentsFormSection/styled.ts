@@ -10,6 +10,7 @@ export const PaymentsFormSectionLayout = styled(StyledSection)`
 	align-items: baseline;
 	justify-content: center;
 	height: 100%;
+	flex-direction: column;
 	min-height: 30vh;
 
 	@media only screen and (max-width: 1300px) {
@@ -31,10 +32,4 @@ export const Background = styled.div`
 		#3c4167 90%,
 		#3c4167 100%
 	);
-`;
-
-export const Text = styled.h4`
-	padding-top: 20px;
-	color: #f0f0f0;
-	font-size: 20px;
 `;

@@ -13,6 +13,8 @@ export const Form = styled.form`
 	align-items: center;
 	flex-direction: column;
 	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
 
 	@media only screen and (max-width: 768px) {
 		width: 80vw;
@@ -195,7 +197,6 @@ export const Required = styled.span`
 `;
 
 export const StyledMessage = styled(StyledSection)`
-	margin: 0;
 	padding: 20px 0 0;
 	max-width: unset;
 	overflow: hidden;
@@ -206,6 +207,7 @@ export const StyledMessage = styled(StyledSection)`
 	height: 100%;
 	min-height: 30vh;
 	color: #f0f0f0;
+	margin: 0 auto;
 
 	@media only screen and (max-width: 1300px) {
 		min-height: 40vh;
@@ -226,4 +228,28 @@ export const Background = styled.div`
 		#3c4167 90%,
 		#3c4167 100%
 	);
+`;
+
+export const Warning = styled.span`
+	color: red;
+	font-weight: 900;
+	opacity: 1;
+`;
+
+export const Invoice = styled.div`
+	margin: 1vh 0;
+	display: flex;
+	align-items: center;
+	font-size: clamp(1.2rem, 1.25vw, 1.75rem);
+	line-height: 1.25em;
+	width: 100%;
+	color: white;
+
+	& > span {
+		width: 100%;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 1rem;
+	}
 `;

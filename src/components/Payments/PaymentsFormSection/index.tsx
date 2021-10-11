@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import PaymentsForm from './PaymentsForm';
+import PaymentsAccountInfo from './PaymentsAccountInfo';
 
-import { PaymentsFormSectionLayout, Background, Text } from './styled';
+import { PaymentsFormSectionLayout, Background } from './styled';
 
 const PaymentsFormSection = () => {
+	const [isFilled, setIsFilled] = useState(false);
+
 	return (
 		<PaymentsFormSectionLayout>
 			<Background />
-			<PaymentsForm />
+			<PaymentsAccountInfo isShown={!isFilled} />
+			<PaymentsForm fillForm={() => setIsFilled(true)} />
 		</PaymentsFormSectionLayout>
 	);
 };

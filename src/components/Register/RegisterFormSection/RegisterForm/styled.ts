@@ -13,6 +13,7 @@ export const Form = styled.form`
 	align-items: center;
 	flex-direction: column;
 	max-width: 1200px;
+	width: 100%;
 
 	@media only screen and (max-width: 768px) {
 		width: 80vw;
