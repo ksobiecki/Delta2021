@@ -8,6 +8,8 @@ module.exports = {
 	plugins: [
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-image`,
+		`gatsby-transformer-sharp`,
+		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -15,8 +17,6 @@ module.exports = {
 				path: `${__dirname}/src/assets/images`,
 			},
 		},
-		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
@@ -31,11 +31,6 @@ module.exports = {
 		},
 		`gatsby-plugin-gatsby-cloud`,
 		`gatsby-plugin-typescript`,
-		{
-			resolve: `gatsby-plugin-styled-components`,
-		},
-		{
-			resolve: `gatsby-plugin-styled-components`,
-		},
+		`gatsby-plugin-styled-components`,
 	],
 };
