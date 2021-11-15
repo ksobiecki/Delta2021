@@ -6,7 +6,7 @@ import partner3 from '../../assets/images/partners/accenture.png';
 import partner4 from '../../assets/images/partners/finestra.png';
 import partner5 from '../../assets/images/partners/indeks.png';
 import partner6 from '../../assets/images/partners/krol_kul.jpg';
-import partner7 from '../../assets/images/partners/pitstop.svg';
+import partner7 from '../../assets/images/partners/pitstop.png';
 import partner8 from '../../assets/images/partners/rossman.svg';
 import partner9 from '../../assets/images/partners/rydwany.png';
 import partner10 from '../../assets/images/partners/tkalnia.jpg';

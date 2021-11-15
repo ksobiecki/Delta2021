@@ -20,7 +20,7 @@ const Slider: React.FC<SliderProps> = ({ sliderImages }) => {
 		<SliderContainer>
 			<ImagesContainer numberOfImages={NUMBER_OF_SLIDES}>
 				{sliderImages.map((logo) => (
-					<ImageContainer key={logo.id}>
+					<ImageContainer key={logo.id} numberOfImages={NUMBER_OF_SLIDES}>
 						<CarouselleImage src={logo.src} alt={logo.alt} />
 					</ImageContainer>
 				))}

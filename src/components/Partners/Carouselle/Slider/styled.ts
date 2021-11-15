@@ -60,4 +60,5 @@ export const ShiftedImageContainer = styled(ImageContainer)`
 
 export const CarouselleImage = styled.img`
 	width: 100%;
+	max-height: 180px;
 `;
